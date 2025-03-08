@@ -6,6 +6,28 @@
 :root{
     --main-color:#AE9768;
 }
+body{
+   overflow-x: hidden;
+}
+
+nav{
+   display: flex;
+   justify-content: space-between;
+   width: 80%;
+   margin: auto;
+   padding: 20px;
+   position: sticky;
+   top:0px;
+}
+
+nav figure img{
+   height: 55px; 
+}
+ul{
+   list-style: none;
+   color: white;
+}
+
 #navLinks li{
    float: left;
    margin-right: 35px;
@@ -35,6 +57,57 @@ a .active:hover{
 
 }
 
+#drop{
+   position: relative;
+ 
+}
+
+.dropdown {
+    display: none; /* Hide the dropdown by default */
+    position: absolute; /* Position it relative to the parent */
+    background-color: #423D36;
+    z-index: 1000; /* Ensure it appears above other elements */
+    text-align: left;
+    width: 200px;
+    padding: 15px;
+    transition: all ease 0.5s;
+    
+   
+  
+}
+
+
+#drop:hover .dropdown {
+    display: block; /* Show the dropdown on hover */
+}
+
+.dropdown li {
+   width: 100%;
+   padding: 8px;
+   transition: all ease 0.5s;
+ 
+}
+
+.dropdown li:hover{
+   background-color: var(--main-color);
+   color: white;
+}
+
+
+.dropdown li a {
+    color: grey;
+    font-size:15px; 
+    font-weight: 500; 
+    line-height: 21px;
+    font-family: "Alegreya", serif;
+
+}
+
+.dropdown li:hover a {
+   color: white;
+}
+
+
 .clr-fix{
    clear: both;
 }
@@ -47,23 +120,6 @@ a .active:hover{
     height: 100%; /* Add this line */
 }
 
-nav{
-   display: flex;
-   justify-content: space-between;
-   width: 80%;
-   margin: auto;
-   padding: 20px;
-   position: sticky;
-   top:0px;
-}
-
-nav figure img{
-   height: 55px; 
-}
-ul{
-   list-style: none;
-   color: white;
-}
 
 #hero{
    height: 100vh;
@@ -71,6 +127,7 @@ ul{
    background-attachment: fixed;
    background-position: center;
    background-size: cover;  
+   position: relative;
 }
 
 #heading{
@@ -96,7 +153,7 @@ ul{
     font-size:24px; 
     font-weight: 400; 
     line-height: 45px;
-    font-family: "Alegreya Sans", serif;
+    font-family: "Alegreya", serif;
  }
 
  #icons{
@@ -163,3 +220,54 @@ ul{
    height: 4px;
    transform: translate(-35%);
  }
+
+ #swapper{
+  position: absolute;
+  bottom:10px;
+  width:40px;
+  height: 60px;
+  border: solid 1px white;
+  border-radius: 100vh;
+ }
+
+ #innerSwapper{
+   width:6px;
+   height:6px;
+   border-radius: 50%;
+   background-color: white;
+   margin: auto;
+   margin-top: 12px;
+   animation: swap infinite 1s alternate-reverse;
+   opacity: 0; /* Change visibility to opacity */
+ }
+
+
+ @keyframes swap {
+   0%{
+     opacity: 0; /* Change visibility to opacity */
+   }
+   25%{
+     opacity: 1; /* Fully visible */
+     transform: translateY(10px);
+   }
+   50%{
+     opacity: 1; /* Fully visible */
+     transform: translateY(10px);
+   }
+   75%{
+     opacity: 1; /* Fully visible */
+     transform: translateY(10px);
+   }
+   100%{
+     opacity: 0; /* Fade out */
+   }
+}
+
+#anotherSection{
+   background-color: var(--main-color);
+   width: 100vw;
+   height: 100vh;
+   margin-top: 50px;
+}
+
+

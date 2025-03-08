@@ -1,57 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/all.min.css">
-    <link rel="stylesheet" href="CSS/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
     <title>Engage Bakery</title>
-</head>
-<body>
+  </head>
+  <body>
     <section id="hero">
-    <nav>
+      <nav>
         <figure>
-            <a href="#">
-                <img src="assets/bakery-light-1.png" alt="logo">
-            </a>
-            
+          <a href="#">
+            <img src="assets/bakery-light-1.png" alt="logo" />
+          </a>
         </figure>
-      
         <ul id="navLinks">
-        
-            <a href="#"><li class="active">Home</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Our Offer</li></a>
-            <a href="#"><li>Gallery</li></a>
-            <a href="#"><li>Blog</li></a>
-            <a href="#">  <li>Contact</li> </a>
-            
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Our Offer</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li id="drop">
+            <a href="#">Blog</a>
+            <ul class="dropdown">
+              <li><a href="#">Blog Index</a></li>
+              <li><a href="#">Simple Post</a></li>
+              <li><a href="#">Gallery Post</a></li>
+              <li><a href="#">Basic Post</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
           <div class="clr-fix"></div>
         </ul>
-       </nav>
-       
-    <section id="main"> 
-    <div id="heading">
-        <span>Welcome to</span>
-        <h1>Family Bakery</h1>
-        <p>We're the biggest, best equipped and most advanced Bakery in the greater <br> Los Angeles area.</p>
-    </div>
+      </nav>
+      <section id="main">
+        <div id="heading">
+          <span>Welcome to</span>
+          <h1>Family Bakery</h1>
+          <p>
+            We're the biggest, best equipped and most advanced Bakery in the
+            greater <br />
+            Los Angeles area.
+          </p>
+        </div>
+        <div id="buttons">
+          <a href="#"><button class="button" id="btn1">Learn More</button></a>
+          <a href="#"><button class="button" id="btn2">Contact us</button></a>
+        </div>
+        <div id="icons">
+          <a href="#"><i class="fa-solid fa-gears"></i></a>
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <a href="#anotherSection">
 
-    <div id="buttons">
-        <a href="#"><button class="button" id="btn1">Learn More</button></a>
-        <a href="#"><button class="button" id="btn2">Contact us</button></a> 
-    </div>
-
-    <div id="icons">
-        <a href="#"><i class="fa-solid fa-gears"></i></a>
-        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
-    </div>
+          <div id="swapper">
+            <div id="innerSwapper"></div>
+          </div>
+        </a>
+        
+      </section>
     </section>
 
-</section>
-   
-</body>
+    <section id="anotherSection"></section>
+  </body>
 </html>
